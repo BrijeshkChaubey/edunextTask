@@ -1,0 +1,543 @@
+ {
+    "success": true,
+    "message": "Successfully",
+    "data": {
+      "template_installment_data_size": 1,
+      "fee_component_wise_detail_hide": false,
+      "fine_type": "normal_fine",
+      "sectionid": 42,
+      "fee_detail_hide_in_online": false,
+      "academicyearid": 8,
+      "component_selection": false,
+      "installment_seq_ignore": false,
+      "termcondition": "",
+      "misc_fee_name": "",
+      "ignore_previous_year_fee": false,
+      "installment_data": {
+        "INSTALLMENT 5": {
+          "paidamount": "2224",
+          "componentperiodids": "53-138,56-138,53-137,56-137",
+          "feecycle": [
+            {
+              "comp_receipt_name": "Student Amenities & Repair Development",
+              "payableamount": "288",
+              "periodname": "OCT-22",
+              "componentperiodid": "56-137",
+              "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+            },
+            {
+              "comp_receipt_name": "Tuition Fees",
+              "payableamount": "824",
+              "periodname": "OCT-22",
+              "componentperiodid": "53-137",
+              "componentname": "TUITION FEES"
+            },
+            {
+              "comp_receipt_name": "Student Amenities & Repair Development",
+              "payableamount": "288",
+              "periodname": "NOV-22",
+              "componentperiodid": "56-138",
+              "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+            },
+            {
+              "comp_receipt_name": "Tuition Fees",
+              "payableamount": "824",
+              "periodname": "NOV-22",
+              "componentperiodid": "53-138",
+              "componentname": "TUITION FEES"
+            }
+          ],
+          "school_bank_id": 2,
+          "installment_to_date": "01-09-2022",
+          "feetemplateid": 8,
+          "referenceIds": "ODgwMjg=,ODgwMjc=,ODgwMjY=,ODgwMjU=",
+          "isdefaultSelect": true,
+          "installment_id": 36,
+          "installment_start_date": "01-09-2022"
+        },
+        "INSTALLMENT 6": {
+          "paidamount": "2224",
+          "componentperiodids": "53-140,56-140,53-139,56-139",
+          "feecycle": [
+            {
+              "comp_receipt_name": "Student Amenities & Repair Development",
+              "payableamount": "288",
+              "periodname": "DEC-22",
+              "componentperiodid": "56-139",
+              "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+            },
+            {
+              "comp_receipt_name": "Tuition Fees",
+              "payableamount": "824",
+              "periodname": "DEC-22",
+              "componentperiodid": "53-139",
+              "componentname": "TUITION FEES"
+            },
+            {
+              "comp_receipt_name": "Student Amenities & Repair Development",
+              "payableamount": "288",
+              "periodname": "JAN-23",
+              "componentperiodid": "56-140",
+              "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+            },
+            {
+              "comp_receipt_name": "Tuition Fees",
+              "payableamount": "824",
+              "periodname": "JAN-23",
+              "componentperiodid": "53-140",
+              "componentname": "TUITION FEES"
+            }
+          ],
+          "school_bank_id": 2,
+          "installment_to_date": "01-10-2022",
+          "feetemplateid": 8,
+          "referenceIds": "ODgwMzI=,ODgwMzE=,ODgwMzA=,ODgwMjk=",
+          "installment_id": 37,
+          "installment_start_date": "01-10-2022"
+        },
+        "INSTALLMENT 7": {
+          "paidamount": "2224",
+          "componentperiodids": "53-142,56-142,53-141,56-141",
+          "feecycle": [
+            {
+              "comp_receipt_name": "Student Amenities & Repair Development",
+              "payableamount": "288",
+              "periodname": "FEB-23",
+              "componentperiodid": "56-141",
+              "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+            },
+            {
+              "comp_receipt_name": "Tuition Fees",
+              "payableamount": "824",
+              "periodname": "FEB-23",
+              "componentperiodid": "53-141",
+              "componentname": "TUITION FEES"
+            },
+            {
+              "comp_receipt_name": "Student Amenities & Repair Development",
+              "payableamount": "288",
+              "periodname": "MAR-23",
+              "componentperiodid": "56-142",
+              "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+            },
+            {
+              "comp_receipt_name": "Tuition Fees",
+              "payableamount": "824",
+              "periodname": "MAR-23",
+              "componentperiodid": "53-142",
+              "componentname": "TUITION FEES"
+            }
+          ],
+          "school_bank_id": 2,
+          "installment_to_date": "01-11-2022",
+          "feetemplateid": 8,
+          "referenceIds": "ODgwMzY=,ODgwMzU=,ODgwMzQ=,ODgwMzM=",
+          "installment_id": 38,
+          "installment_start_date": "01-11-2022"
+        }
+      },
+      "total_due_amt": "6672",
+      "default_fee_till_date": false,
+      "nextSessionFee": false,
+      "online_fee_term_condition": "",
+      "student_online_fee_mode": 2,
+      "selected_feetemplateid": "8",
+      "paid_template_installment_data": {
+        "8__XX__Pre School Fee Receipt": {
+          "INSTALLMENT 4": {
+            "totalwaviedamount": 0,
+            "actualfeeamount": 0,
+            "payableamount": 0,
+            "installment_intimate_date": "01-08-2022",
+            "totalpayableamount": 2224,
+            "fee_component_array": [
+              {
+                "periodid": 135,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 56,
+                "totalpayableamount": 288,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"432.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Student Amenities & Repair Development",
+                "period_name": "AUG-22",
+                "concessionamount": 432,
+                "waviedamount": 0,
+                "actualfeeamount": 720,
+                "payableamount": 0,
+                "totalpaidamount": 288
+              },
+              {
+                "periodid": 135,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 53,
+                "totalpayableamount": 824,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"1236.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Tuition Fees",
+                "period_name": "AUG-22",
+                "concessionamount": 1236,
+                "waviedamount": 0,
+                "actualfeeamount": 2060,
+                "payableamount": 0,
+                "totalpaidamount": 824
+              },
+              {
+                "periodid": 136,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 56,
+                "totalpayableamount": 288,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"432.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Student Amenities & Repair Development",
+                "period_name": "SEP-22",
+                "concessionamount": 432,
+                "waviedamount": 0,
+                "actualfeeamount": 720,
+                "payableamount": 0,
+                "totalpaidamount": 288
+              },
+              {
+                "periodid": 136,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 53,
+                "totalpayableamount": 824,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"1236.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Tuition Fees",
+                "period_name": "SEP-22",
+                "concessionamount": 1236,
+                "waviedamount": 0,
+                "actualfeeamount": 2060,
+                "payableamount": 0,
+                "totalpaidamount": 824
+              }
+            ],
+            "totalpaidamount": 2224,
+            "installmentname": "INSTALLMENT 4",
+            "status": "paid",
+            "totalconcessionamount": 3336
+          },
+          "INSTALLMENT 3": {
+            "totalwaviedamount": 0,
+            "actualfeeamount": 0,
+            "payableamount": 0,
+            "installment_intimate_date": "01-07-2022",
+            "totalpayableamount": 1780,
+            "fee_component_array": [
+              {
+                "periodid": 134,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 53,
+                "totalpayableamount": 824,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"1236.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Tuition Fees",
+                "period_name": "JUL-22",
+                "concessionamount": 1236,
+                "waviedamount": 0,
+                "actualfeeamount": 2060,
+                "payableamount": 0,
+                "totalpaidamount": 824
+              },
+              {
+                "periodid": 144,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 7,
+                "totalpayableamount": 668,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"1002.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Examination Fees",
+                "period_name": "ANNUAL 22-23",
+                "concessionamount": 1002,
+                "waviedamount": 0,
+                "actualfeeamount": 1670,
+                "payableamount": 0,
+                "totalpaidamount": 668
+              },
+              {
+                "periodid": 134,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 56,
+                "totalpayableamount": 288,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"432.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Student Amenities & Repair Development",
+                "period_name": "JUL-22",
+                "concessionamount": 432,
+                "waviedamount": 0,
+                "actualfeeamount": 720,
+                "payableamount": 0,
+                "totalpaidamount": 288
+              }
+            ],
+            "totalpaidamount": 1780,
+            "installmentname": "INSTALLMENT 3",
+            "status": "paid",
+            "totalconcessionamount": 2670
+          },
+          "INSTALLMENT 2": {
+            "totalwaviedamount": 0,
+            "actualfeeamount": 0,
+            "payableamount": 0,
+            "installment_intimate_date": "01-05-2022",
+            "totalpayableamount": 2224,
+            "fee_component_array": [
+              {
+                "periodid": 132,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 56,
+                "totalpayableamount": 288,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"432.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Student Amenities & Repair Development",
+                "period_name": "MAY-22",
+                "concessionamount": 432,
+                "waviedamount": 0,
+                "actualfeeamount": 720,
+                "payableamount": 0,
+                "totalpaidamount": 288
+              },
+              {
+                "periodid": 132,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 53,
+                "totalpayableamount": 824,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"1236.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Tuition Fees",
+                "period_name": "MAY-22",
+                "concessionamount": 1236,
+                "waviedamount": 0,
+                "actualfeeamount": 2060,
+                "payableamount": 0,
+                "totalpaidamount": 824
+              },
+              {
+                "periodid": 133,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 56,
+                "totalpayableamount": 288,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"432.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Student Amenities & Repair Development",
+                "period_name": "JUN-22",
+                "concessionamount": 432,
+                "waviedamount": 0,
+                "actualfeeamount": 720,
+                "payableamount": 0,
+                "totalpaidamount": 288
+              },
+              {
+                "periodid": 133,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 53,
+                "totalpayableamount": 824,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"1236.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Tuition Fees",
+                "period_name": "JUN-22",
+                "concessionamount": 1236,
+                "waviedamount": 0,
+                "actualfeeamount": 2060,
+                "payableamount": 0,
+                "totalpaidamount": 824
+              }
+            ],
+            "totalpaidamount": 2224,
+            "installmentname": "INSTALLMENT 2",
+            "status": "paid",
+            "totalconcessionamount": 3336
+          },
+          "INSTALLMENT 1": {
+            "totalwaviedamount": 0,
+            "actualfeeamount": 0,
+            "payableamount": 0,
+            "installment_intimate_date": "01-04-2022",
+            "totalpayableamount": 1112,
+            "fee_component_array": [
+              {
+                "periodid": 131,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 56,
+                "totalpayableamount": 288,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"432.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Student Amenities & Repair Development",
+                "period_name": "APR-22",
+                "concessionamount": 432,
+                "waviedamount": 0,
+                "actualfeeamount": 720,
+                "payableamount": 0,
+                "totalpaidamount": 288
+              },
+              {
+                "periodid": 131,
+                "concessionid": 100,
+                "concessionheadid_str": "100",
+                "componentid": 53,
+                "totalpayableamount": 824,
+                "concession_head_detail": "{\"concession_head_detail\":[{\"approveddate\":\"\",\"concessionid\":100,\"creationdate\":\"18-05-2021\",\"amount\":\"1236.00\",\"ispercentage\":true,\"createdby\":101,\"depend_on_last_concession_amount\":false,\"vouchercreationdate\":\"01-04-2022\",\"value\":60,\"remarks\":\"STAFF WARD CONCESSION 60% ERP Apoorva Maam\"}]}",
+                "componentname": "Tuition Fees",
+                "period_name": "APR-22",
+                "concessionamount": 1236,
+                "waviedamount": 0,
+                "actualfeeamount": 2060,
+                "payableamount": 0,
+                "totalpaidamount": 824
+              }
+            ],
+            "totalpaidamount": 1112,
+            "installmentname": "INSTALLMENT 1",
+            "status": "paid",
+            "totalconcessionamount": 1668
+          }
+        }
+      },
+      "finearray": [
+        {
+          "finapayable": 0,
+          "finepaid": 0,
+          "finename": "Late Fee",
+          "fine_waiver": 0
+        }
+      ],
+      "previous_amt": "0",
+      "studentid": 10996,
+      "total_misc_due_amt": 0,
+      "disable_previous_year_fee_in_online": false,
+      "classid": 17,
+      "nextClassId": "",
+      "currency_type": "Rupees",
+      "nextSectionId": "",
+      "template_installment_data": {
+        "8__XX__Pre School Fee Receipt": {
+          "INSTALLMENT 5": {
+            "paidamount": "2224",
+            "componentperiodids": "53-138,56-138,53-137,56-137",
+            "feecycle": [
+              {
+                "comp_receipt_name": "Student Amenities & Repair Development",
+                "payableamount": "288",
+                "periodname": "OCT-22",
+                "componentperiodid": "56-137",
+                "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+              },
+              {
+                "comp_receipt_name": "Tuition Fees",
+                "payableamount": "824",
+                "periodname": "OCT-22",
+                "componentperiodid": "53-137",
+                "componentname": "TUITION FEES"
+              },
+              {
+                "comp_receipt_name": "Student Amenities & Repair Development",
+                "payableamount": "288",
+                "periodname": "NOV-22",
+                "componentperiodid": "56-138",
+                "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+              },
+              {
+                "comp_receipt_name": "Tuition Fees",
+                "payableamount": "824",
+                "periodname": "NOV-22",
+                "componentperiodid": "53-138",
+                "componentname": "TUITION FEES"
+              }
+            ],
+            "school_bank_id": 2,
+            "installment_to_date": "01-09-2022",
+            "feetemplateid": 8,
+            "referenceIds": "ODgwMjg=,ODgwMjc=,ODgwMjY=,ODgwMjU=",
+            "isdefaultSelect": true,
+            "installment_id": 36,
+            "installment_start_date": "01-09-2022"
+          },
+          "INSTALLMENT 6": {
+            "paidamount": "2224",
+            "componentperiodids": "53-140,56-140,53-139,56-139",
+            "feecycle": [
+              {
+                "comp_receipt_name": "Student Amenities & Repair Development",
+                "payableamount": "288",
+                "periodname": "DEC-22",
+                "componentperiodid": "56-139",
+                "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+              },
+              {
+                "comp_receipt_name": "Tuition Fees",
+                "payableamount": "824",
+                "periodname": "DEC-22",
+                "componentperiodid": "53-139",
+                "componentname": "TUITION FEES"
+              },
+              {
+                "comp_receipt_name": "Student Amenities & Repair Development",
+                "payableamount": "288",
+                "periodname": "JAN-23",
+                "componentperiodid": "56-140",
+                "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+              },
+              {
+                "comp_receipt_name": "Tuition Fees",
+                "payableamount": "824",
+                "periodname": "JAN-23",
+                "componentperiodid": "53-140",
+                "componentname": "TUITION FEES"
+              }
+            ],
+            "school_bank_id": 2,
+            "installment_to_date": "01-10-2022",
+            "feetemplateid": 8,
+            "referenceIds": "ODgwMzI=,ODgwMzE=,ODgwMzA=,ODgwMjk=",
+            "installment_id": 37,
+            "installment_start_date": "01-10-2022"
+          },
+          "INSTALLMENT 7": {
+            "paidamount": "2224",
+            "componentperiodids": "53-142,56-142,53-141,56-141",
+            "feecycle": [
+              {
+                "comp_receipt_name": "Student Amenities & Repair Development",
+                "payableamount": "288",
+                "periodname": "FEB-23",
+                "componentperiodid": "56-141",
+                "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+              },
+              {
+                "comp_receipt_name": "Tuition Fees",
+                "payableamount": "824",
+                "periodname": "FEB-23",
+                "componentperiodid": "53-141",
+                "componentname": "TUITION FEES"
+              },
+              {
+                "comp_receipt_name": "Student Amenities & Repair Development",
+                "payableamount": "288",
+                "periodname": "MAR-23",
+                "componentperiodid": "56-142",
+                "componentname": "STUDENT AMENITIES & REPAIR DEVELOPMENT"
+              },
+              {
+                "comp_receipt_name": "Tuition Fees",
+                "payableamount": "824",
+                "periodname": "MAR-23",
+                "componentperiodid": "53-142",
+                "componentname": "TUITION FEES"
+              }
+            ],
+            "school_bank_id": 2,
+            "installment_to_date": "01-11-2022",
+            "feetemplateid": 8,
+            "referenceIds": "ODgwMzY=,ODgwMzU=,ODgwMzQ=,ODgwMzM=",
+            "installment_id": 38,
+            "installment_start_date": "01-11-2022"
+          }
+        }
+      },
+      "normal_fine": "normal_fine",
+      "last_year_amount": 0,
+      "online_fee_deposit_upto": "",
+      "total_advance_amt": "0"
+    }
+  } 
+  
