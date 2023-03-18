@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import CheckBox from  '@react-native-community/checkbox';
+import { styles } from './styles';
 
 export default function Modalcard({...props}) {
    const  data=props
@@ -25,15 +26,3 @@ export default function Modalcard({...props}) {
   )
 }
 
-const styles = StyleSheet.create({
-  root: {
-    borderWidth: 1,
-    borderColor: 'green',
-    borderRadius: 10,
-    backgroundColor: '#fff',
-   
-    
-  },
-  HeaderText:{ fontSize: 15,
-    fontWeight: 'bold' },
-})

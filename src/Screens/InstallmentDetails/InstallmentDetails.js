@@ -1,13 +1,14 @@
 import { View, Text, Button, Image, StyleSheet ,Modal, TouchableOpacity, FlatList, ScrollView} from 'react-native'
 import React, { useState } from 'react';
-import Payment from './Payment.json'
+import Payment from '../../Constants/Payment.json'
 
 
 import Icon from 'react-native-vector-icons/dist/AntDesign';
-import Unpaidlist from './src/Components/Unpaidlist';
-import Paidlist from './src/Components/Paidlist';
+import Unpaidlist from '../Unpaidlist/Unpaidlist';
+import Paidlist from '../Paidlist/Paidlist';
 import { useSelector } from 'react-redux';
-import CustomYearpicker from './src/Components/customYearpicker';
+import CustomYearpicker from '../../Components/Customyearpicker/customYearpicker';
+import { styles } from './styles';
 
 const InstallmentDetails = () => {
   const data= Payment.data.installment_data
@@ -45,7 +46,7 @@ const InstallmentDetails = () => {
         <Text style={styles.HeaderTextDue}> Due fee</Text>
         <View style={{flexDirection:'row',justifyContent:'space-between',padding:10}}>
           <View style={{flexDirection:'row'}}>
-            <Image source={require('./Assets/moneyimage.png')}  style={{height:27,width:35,margin:5}}/>
+            <Image source={require('../../../Assets//moneyimage.png')}  style={{height:27,width:35,margin:5}}/>
             <Text style={styles.HeaderText}>₹ {selector.Selectamount}</Text>
            </View>
            
@@ -90,39 +91,6 @@ const InstallmentDetails = () => {
 }
 
 
-const styles = StyleSheet.create({
-  root: {
-    borderWidth: 1,
-    borderRadius: 10,
-    backgroundColor: '#fff',
-    marginVertical: 5,
-    margin:10,
-    padding:5,
-    height:80
-  },
- 
-    checkboxContainer: {
-      flexDirection: 'row',
-      marginBottom: 20,
-    },
-    checkbox: {
-      alignSelf: 'center',
-    },
-    rightContainer: {
-        padding: 10,
-        flex: 3,
-      },
-      HeaderTextDue:{ fontSize: 15,
-        fontWeight: 'bold',color:'red',paddingLeft:15 },
-    HeaderText:{ fontSize: 18,
-      fontWeight: 'bold',margin:5 },
-      HeaderText1:{ fontSize: 18,
-        fontWeight: 'bold' },
-    HeaderTextUnPaid:{ fontSize: 18,
-      fontWeight: 'bold',color:'red',paddingLeft:15 },
-      HeaderTextPaid:{ fontSize: 18,
-        fontWeight: 'bold',color:'green',paddingLeft:15 },
-  });
-  
+
 
 export default InstallmentDetails

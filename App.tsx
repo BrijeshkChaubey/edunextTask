@@ -19,8 +19,8 @@ import {
 } from 'react-native';
 
 
-import InstallmentDetails from './InstallmentDetails';
 import { store } from './src/redux/store';
+import InstallmentDetails from './src/Screens/InstallmentDetails/InstallmentDetails';
 
 
 const App=()=>{
