@@ -1,20 +1,25 @@
 import {  StyleSheet } from 'react-native'
+import { Colors } from '../../Constants/Color'
 export const styles = StyleSheet.create({
+  innerView3:{
+    backgroundColor: '#00008b',
+     height: '4%'
+  },
     root: {
         borderWidth: 1,
-        borderColor: 'green',
+        borderColor: Colors.Green,
         borderRadius: 10,
        
         marginVertical: 5,
         margin:10,
         padding:5,
         height:80,
-        shadowColor: 'black',
+        shadowColor: Colors.Black,
         shadowOpacity: 0.26,
         shadowOffset: { width: 0, height: 2},
         shadowRadius: 10,
         elevation: 10,
-        backgroundColor: 'rgb(240,250,240)'
+        backgroundColor: Colors.Light_green
       },
       innerroot:{
         flexDirection:'row'
@@ -29,10 +34,12 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold' },
       Paidtext:{
         fontWeight:'bold',
-        color:'green',
+        color:Colors.Green,
       },
       ruppe:{
         fontWeight:'bold',
-        color:'#9370db'
-      }
+        color:Colors.ruppecolor
+      },
+      
+     
 })

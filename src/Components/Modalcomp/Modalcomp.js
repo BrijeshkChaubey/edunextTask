@@ -6,21 +6,14 @@ import { styles } from './styles'
 
 const Modalcomp = ({...props}) => {
     const data= props
-    console.log("Modalcomp",data.data.feecycle)
+   
   return (
     
      <Modal transparent={true} visible={ data.visible}>
     <View style={{backgroundColor: '#000000aa'}}>
     <View
-      style={{
-        backgroundColor: '#ffffff',
-        margin: 20,
-        marginTop: 80,
-        padding: 15,
-        borderRadius: 10,
-        height: '85%',
-      }}>
-      <Text style={styles.HeaderText}>Fee details</Text>
+      style={styles.root}>
+      <Text style={styles.HeaderText}> {`${texts.Fee_details} `}</Text>
       <View style={styles.innerroots}>
       <FlatList
         data={data.data.feecycle}
@@ -35,24 +28,19 @@ const Modalcomp = ({...props}) => {
       
       </View>
       <View style={styles.amount}>
-        <Text style={styles.HeaderText} >Sub Total</Text>
+        <Text style={styles.HeaderText} > {`${texts.Sub_Total} `}</Text>
         <Text style={styles.Paidtext}> {`${texts.ruppes_symbol} ${data.Newamount}`}</Text>
       </View>
       
-      <Text style={styles.HeaderText}>Total Ammount</Text>
+      <Text style={styles.HeaderText}>{`${texts.Total_Ammount} `}</Text>
 
       <View
-        style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-        <Text>Sub Total</Text>
+        style={styles.innerroot}>
+        <Text>{`${texts.Sub_Total} `}</Text>
         <Text style={styles.Paidtext}> {`${texts.ruppes_symbol} ${data.Newamount}`} </Text>
       </View>
       <View
-        style={{
-          width: 80,
-          height: 60,
-          alignSelf: 'center',
-          borderRadius: 30,
-        }}>
+        style={styles.Viewstyle}>
         <Button title="Select" onPress={() => {data.Modalfunctionality()}} />
       </View>
     </View>

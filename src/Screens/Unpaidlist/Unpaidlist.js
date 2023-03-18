@@ -70,14 +70,15 @@ const Unpaidlist = ({...props}) => {
             <Text style={styles.HeaderText}>{data.item}</Text>
           </View>
 
-          <Text style={styles.ruppe}>₹ {data.items.paidamount}</Text>
+          <Text style={styles.ruppe}>{`${texts.ruppes_symbol} ${data.items.paidamount}`} </Text>
         </View>
         <View style={styles.insideroot}>
           <Text style={styles.Paidtext}>
-            Duedate:{data.items.installment_to_date}
+          {`${texts.Duedate}${data.items.installment_to_date}`}
+            
           </Text>
           <TouchableOpacity onPress={openmodal}>
-            <Text style={styles.Feedetails}>Feedetail >> </Text>
+            <Text style={styles.Feedetails}>{`${texts.Feedetail}`} </Text>
           </TouchableOpacity>
         </View>
       </View>

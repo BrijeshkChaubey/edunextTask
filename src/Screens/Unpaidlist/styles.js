@@ -1,16 +1,17 @@
 import { StyleSheet } from "react-native";
+import { Colors } from "../../Constants/Color";
 
 export const styles = StyleSheet.create({
     root: {
       borderWidth: 1,
-      borderColor: 'red',
+      borderColor: Colors.Red,
       borderRadius: 10,
-      backgroundColor: 'rgb(250,240,240)',
+      backgroundColor: Colors.Light_red,
       marginVertical: 5,
       margin: 10,
       padding: 5,
       height: 80,
-      shadowColor: 'black',
+      shadowColor: Colors.Black,
       shadowOpacity: 0.26,
       shadowOffset: { width:0, height: 2},
       shadowRadius: 10,
@@ -23,9 +24,9 @@ export const styles = StyleSheet.create({
     },
     amount: {
       borderWidth: 1,
-      borderColor: 'red',
+      borderColor: Colors.Red,
       borderRadius: 10,
-      backgroundColor: '#fff',
+      backgroundColor: Colors.White,
       marginVertical: 5,
       height: 40,
       flexDirection: 'row',
@@ -43,7 +44,7 @@ export const styles = StyleSheet.create({
     },
     Paidtext: {
       fontWeight: 'bold',
-      color: 'red',
+      color: Colors.Red,
     },
     ruppe: {
       fontWeight: 'bold',
@@ -51,7 +52,7 @@ export const styles = StyleSheet.create({
     },
     Feedetails: {
       fontWeight: 'bold',
-      color: 'brown',
+      color: Colors.Brown,
     },
   });
   

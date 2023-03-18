@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import CheckBox from  '@react-native-community/checkbox';
 import { styles } from './styles';
+import { texts } from '../../Constants/Text';
 
 export default function Modalcard({...props}) {
    const  data=props
@@ -21,7 +22,7 @@ export default function Modalcard({...props}) {
       </View>
     
    
-      <Text style={styles.ruppe}>Totalfee: ₹{data.payableamount}</Text>
+      <Text style={styles.ruppe}> {`${texts.Totalefee}${texts.ruppes_symbol} ${data.payableamount}`}</Text>
     </View>
   )
 }
