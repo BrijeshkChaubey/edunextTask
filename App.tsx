@@ -7,6 +7,7 @@
 
 import React from 'react';
 import type {PropsWithChildren} from 'react';
+import { Provider } from 'react-redux';
 import {
   SafeAreaView,
   ScrollView,
@@ -19,11 +20,15 @@ import {
 
 
 import InstallmentDetails from './InstallmentDetails';
+import { store } from './src/redux/store';
 
 
 const App=()=>{
   return (
-    <InstallmentDetails/>
+    <Provider store={store}>
+        <InstallmentDetails/>
+    </Provider>
+  
    
   )
 }

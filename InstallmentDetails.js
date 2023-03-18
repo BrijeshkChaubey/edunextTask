@@ -1,13 +1,21 @@
-import { View, Text, Button, Image, StyleSheet ,Modal, TouchableOpacity, FlatList} from 'react-native'
+import { View, Text, Button, Image, StyleSheet ,Modal, TouchableOpacity, FlatList, ScrollView} from 'react-native'
 import React, { useState } from 'react';
 import Payment from './Payment.json'
 
-import CheckBox from  '@react-native-community/checkbox';
+
 import Icon from 'react-native-vector-icons/dist/AntDesign';
+import Unpaidlist from './src/Components/Unpaidlist';
+import Paidlist from './src/Components/Paidlist';
+import { useSelector } from 'react-redux';
+import CustomYearpicker from './src/Components/customYearpicker';
 
 const InstallmentDetails = () => {
-    const data = Payment.data.installment_data
-    console.log(data)
+  const data= Payment.data.installment_data
+  const selector = useSelector(state => state);
+  console.log("Selector",selector)
+   
+    const data2= Payment.data.paid_template_installment_data['8__XX__Pre School Fee Receipt']
+    console.log( "Data",data)
     const [toggleCheckBox, setToggleCheckBox] = useState(false)
     const [visible,setVisible]=useState(false)
   return (
@@ -23,71 +31,54 @@ const InstallmentDetails = () => {
         <Text style={{color:'white'}}>      Online fee payment</Text>
         </View>
    </View>
-   <View style={{flex:1}}>
-    <View style={{alignItems:'flex-start'}}><Text>Fee payment</Text></View>
-    <View  style={{alignItems:'flex-end'}}><Text> calender</Text></View>
+   <ScrollView style={{flex:1}}>
+    <View style={{flexDirection:'row',justifyContent:'space-between'}}>
+    <View style={{alignItems:'flex-start'}}>
+    <Text  style={styles.HeaderText1}>Fee payment</Text></View>
+    <View  style={{alignItems:'flex-end'}}>
+      <CustomYearpicker/>
+    </View>
+    </View>
+   
       <View>
         <View style={styles.root}>
-        <Text style={{color:'red'}}> Due fee</Text>
-        <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-            <Image source={require('./Assets/moneyimage.png')}  style={{height:20,width:23}}/>
+        <Text style={styles.HeaderTextDue}> Due fee</Text>
+        <View style={{flexDirection:'row',justifyContent:'space-between',padding:10}}>
+          <View style={{flexDirection:'row'}}>
+            <Image source={require('./Assets/moneyimage.png')}  style={{height:27,width:35,margin:5}}/>
+            <Text style={styles.HeaderText}>₹ {selector.Selectamount}</Text>
+           </View>
            
-            <Text>Amount</Text>
             <Button title='paynow'/>
         </View>
         </View>
-        <Modal
-        transparent={true}
-        visible={visible}>
-        <View style={{backgroundColor:'#000000aa',flex:1}}>
-        <View style={{backgroundColor:'#ffffff',margin:50,padding:40,borderRadius:10,flex:1}}>
-            <Text>Modal text</Text>
-            <Button title='Select' onPress={()=>setVisible(false)}/>
-        </View>
+    
+        <Text style={styles.HeaderTextUnPaid}>Unpaid Installment</Text>
+        <FlatList 
+      data={Object.keys(data)}
+      renderItem={(({item })=>(
+        <Unpaidlist item={item}items={data[item]} feecycle={data[item].feecycle} />
+       
+      ))}
+      />
+      <Text  style={styles.HeaderTextPaid}>Paid Installment</Text>
+        <FlatList 
+      data={Object.keys(data2)}
+      renderItem={(({item})=>(
+        <Paidlist item={item}items={data2[item]}/>
+       
+      ))}
+      />
+      
+      
+       
+     
 
-        </View>
-        </Modal>
-        <Text style={{color:'red'}}>Unpaid installment</Text>
         
-       <FlatList
-       data={data}
-       renderItem={({item})=>(
-        <View  style={styles.root}>
-        <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-     <View  style={{flexDirection:'row',justifyContent:'space-between'}}>
-        <CheckBox disabled={false}value={toggleCheckBox}onValueChange={(newValue) => setToggleCheckBox(newValue)}/>
-        <Text>item</Text>
-     </View>
-
-           
-            <Text>{data['INSTALLMENT 5'].paidamount}</Text>
-        </View>
-        <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-            <Text>Due date</Text>
-            <TouchableOpacity onPress={()=>setVisible(true)}>
-            <Text>Feedetail Button</Text>
-            </TouchableOpacity>
-           
-        </View>
-    </View>
-       )}/>
-
-        <Text  style={{color:'green'}}>paid installment</Text>
-
-        <View  style={styles.root}>
-            <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-               
-                <Text>Installment</Text>
-                <Text>Amount</Text>
-            </View>
-            <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-                <Text>Due date</Text>
-                <Text>Fee status</Text>
-                
-            </View>
-        </View>
+       
+       
       </View>
-      </View>
+      </ScrollView>
       <View style={{backgroundColor:'#00008b',
     height:'4%',
   
@@ -100,13 +91,15 @@ const InstallmentDetails = () => {
 
 
 const styles = StyleSheet.create({
-    root: {
-        borderWidth: 1,
-        borderColor: '#d1d1d1',
-        borderRadius: 10,
-        backgroundColor: '#fff',
-        marginVertical: 5,
-      },
+  root: {
+    borderWidth: 1,
+    borderRadius: 10,
+    backgroundColor: '#fff',
+    marginVertical: 5,
+    margin:10,
+    padding:5,
+    height:80
+  },
  
     checkboxContainer: {
       flexDirection: 'row',
@@ -119,9 +112,16 @@ const styles = StyleSheet.create({
         padding: 10,
         flex: 3,
       },
-    label: {
-      margin: 8,
-    },
+      HeaderTextDue:{ fontSize: 15,
+        fontWeight: 'bold',color:'red',paddingLeft:15 },
+    HeaderText:{ fontSize: 18,
+      fontWeight: 'bold',margin:5 },
+      HeaderText1:{ fontSize: 18,
+        fontWeight: 'bold' },
+    HeaderTextUnPaid:{ fontSize: 18,
+      fontWeight: 'bold',color:'red',paddingLeft:15 },
+      HeaderTextPaid:{ fontSize: 18,
+        fontWeight: 'bold',color:'green',paddingLeft:15 },
   });
   
 
