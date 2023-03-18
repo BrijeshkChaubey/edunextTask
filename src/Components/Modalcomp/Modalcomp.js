@@ -16,11 +16,12 @@ const Modalcomp = ({...props}) => {
         backgroundColor: '#ffffff',
         margin: 20,
         marginTop: 80,
-        padding: 20,
+        padding: 15,
         borderRadius: 10,
-        height: '80%',
+        height: '85%',
       }}>
       <Text style={styles.HeaderText}>Fee details</Text>
+      <View style={styles.innerroots}>
       <FlatList
         data={data.data.feecycle}
         renderItem={({item}) => (
@@ -31,16 +32,19 @@ const Modalcomp = ({...props}) => {
           />
         )}
       />
-      <View style={styles.amount}>
-        <Text>Sub Total</Text>
-        <Text> {`${texts.ruppes_symbol} ${data.Newamount}`}</Text>
+      
       </View>
+      <View style={styles.amount}>
+        <Text style={styles.HeaderText} >Sub Total</Text>
+        <Text style={styles.Paidtext}> {`${texts.ruppes_symbol} ${data.Newamount}`}</Text>
+      </View>
+      
       <Text style={styles.HeaderText}>Total Ammount</Text>
 
       <View
         style={{flexDirection: 'row', justifyContent: 'space-between'}}>
         <Text>Sub Total</Text>
-        <Text> {`${texts.ruppes_symbol} ${data.Newamount}`} </Text>
+        <Text style={styles.Paidtext}> {`${texts.ruppes_symbol} ${data.Newamount}`} </Text>
       </View>
       <View
         style={{

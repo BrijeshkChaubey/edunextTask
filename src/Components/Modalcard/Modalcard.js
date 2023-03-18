@@ -21,7 +21,7 @@ export default function Modalcard({...props}) {
       </View>
     
    
-      <Text>Totalfee: ₹{data.payableamount}</Text>
+      <Text style={styles.ruppe}>Totalfee: ₹{data.payableamount}</Text>
     </View>
   )
 }
