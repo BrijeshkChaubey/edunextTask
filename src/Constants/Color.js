@@ -10,6 +10,7 @@ export const Colors={
     Blue:'#87cefa',
     Light_Blue:'rgb(230,222,245)',
     Bluee:'rgb(150,222,245)',
+    Dark_blue:'#00008b',
 
 
 }

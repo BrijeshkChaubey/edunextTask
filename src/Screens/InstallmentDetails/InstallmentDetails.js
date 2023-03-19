@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import Payment from '../../Constants/Payment.json';
-
+import {Card} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/dist/AntDesign';
 import Unpaidlist from '../Unpaidlist/Unpaidlist';
 import Paidlist from '../Paidlist/Paidlist';
@@ -17,6 +17,7 @@ import CustomYearpicker from '../../Components/Customyearpicker/customYearpicker
 import {styles} from './styles';
 import {texts} from '../../Constants/Text';
 import { Colors } from '../../Constants/Color';
+import { hp, wp } from '../../Constants/Dimensions';
 
 const InstallmentDetails = () => {
   const data = Payment.data.installment_data;
@@ -33,10 +34,10 @@ const InstallmentDetails = () => {
   return (
     <View style={{backgroundColor: '#FFF', flex: 1}}>
       <View
-        style={styles.innerView}>
+        style={styles.header}>
         <View
           style={styles.inneeView1}>
-          <Icon name="arrowleft" size={20} color="white" />
+          <Icon name="arrowleft" size={20} color={Colors.White} />
 
           <Text style={{color: Colors.White}}>   {`${texts.Online_fee_payment}`} </Text>
         </View>
@@ -57,10 +58,13 @@ const InstallmentDetails = () => {
             <View
               style={styles.innerView2}>
               <View style={{flexDirection: 'row'}}>
-                <Image
-                  source={require('../../../Assets//moneyimage.png')}
-                  style={{height: 27, width: 35, margin: 5}}
-                />
+                <Card.Cover
+               
+                source={require('../../../Assets//moneyimage.png')}
+                style={{height: hp("4%"), width: wp("9%"), margin:wp("0.5%")}}
+                resizeMode="contain"
+              />
+                
                 <Text style={styles.HeaderText}>
                   {`${texts.ruppes_symbol} ${selector.Selectamount}`}
                 </Text>
@@ -90,7 +94,7 @@ const InstallmentDetails = () => {
           />
         </View>
       </ScrollView>
-      <View style={{backgroundColor: '#00008b', height: '4%'}}></View>
+      <View style={styles.footer}></View>
     </View>
   );
 };

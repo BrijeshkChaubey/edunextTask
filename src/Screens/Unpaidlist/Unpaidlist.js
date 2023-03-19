@@ -25,12 +25,12 @@ const Unpaidlist = ({...props}) => {
   for (let i = 0; i < data.feecycle.length; i++) {
     Newamount = Newamount + parseInt(data.feecycle[i].payableamount);
   }
-  console.log('AddedAmount', Newamount);
+  
 
   const dispatch = useDispatch();
   const [toggleCheckBox, setToggleCheckBox] = useState(false);
   const [visible, setVisible] = useState(false);
-  const [Value, setValue] = useState(false);
+ 
   const openmodal = () => {
     setVisible(true);
   };

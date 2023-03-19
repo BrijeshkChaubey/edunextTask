@@ -1,25 +1,24 @@
 import {  StyleSheet } from 'react-native'
 import { Colors } from '../../Constants/Color'
+import { hp } from '../../Constants/Dimensions'
 export const styles = StyleSheet.create({
-  innerView3:{
-    backgroundColor: '#00008b',
-     height: '4%'
-  },
-    root: {
+
+  
+      root: {
         borderWidth: 1,
         borderColor: Colors.Green,
         borderRadius: 10,
-       
-        marginVertical: 5,
-        margin:10,
-        padding:5,
-        height:80,
+        backgroundColor: Colors.Light_green,
+        marginVertical: hp('1.5%'),
+        margin: hp('2%'),
+        padding: hp('0.5%'),
+        height: hp("10%"),
         shadowColor: Colors.Black,
         shadowOpacity: 0.26,
-        shadowOffset: { width: 0, height: 2},
+        shadowOffset: { width:0, height: 2},
         shadowRadius: 10,
         elevation: 10,
-        backgroundColor: Colors.Light_green
+        
       },
       innerroot:{
         flexDirection:'row'
@@ -28,9 +27,9 @@ export const styles = StyleSheet.create({
       insideroot:{
         flexDirection:'row'
         ,justifyContent:'space-between',
-        marginTop:20
+        marginTop:hp('2.8%')
       },
-      HeaderText:{ fontSize: 18,
+      HeaderText:{ fontSize: hp('2%'),
         fontWeight: 'bold' },
       Paidtext:{
         fontWeight:'bold',

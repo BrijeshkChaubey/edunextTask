@@ -1,64 +1,64 @@
 import {StyleSheet} from 'react-native';
 import { Colors } from '../../Constants/Color';
+import { hp, wp } from '../../Constants/Dimensions';
 
 export const styles = StyleSheet.create({
   root: {
     borderWidth: 1,
+    borderColor: Colors.Blue,
     borderRadius: 10,
-    backgroundColor:Colors.White ,
-    marginVertical: 5,
-    margin: 10,
-    padding: 5,
-    height: 80,
-    shadowColor: Colors.Black,
+    backgroundColor: Colors.White,
+    marginVertical: hp('1.5%'),
+    margin: hp('2%'),
+    padding: hp('0.5%'),
+    height: hp("10%"),
+    shadowColor: Colors.Dark_blue,
     shadowOpacity: 0.26,
-    shadowOffset: {width: 0, height: 2},
+    shadowOffset: { width:0, height: 5},
     shadowRadius: 10,
-    elevation: 3,
+    elevation: 10,
+    
   },
 
   checkboxContainer: {
     flexDirection: 'row',
-    marginBottom: 20,
+    marginBottom: hp("3%"),
   },
   checkbox: {
     alignSelf: 'center',
   },
-  rightContainer: {
-    padding: 10,
-    flex: 3,
-  },
+ 
   HeaderTextDue: {
-    fontSize: 15,
+    fontSize: hp("2%"),
     fontWeight: 'bold',
     color: Colors.Red,
-    paddingLeft: 15,
+    paddingLeft: wp("3%"),
   },
-  HeaderText: {fontSize: 18, fontWeight: 'bold', margin: 5},
-  HeaderText1: {fontSize: 18, fontWeight: 'bold'},
+  HeaderText: {fontSize: hp("2.3%"), fontWeight: 'bold', margin: hp("0.8%")},
+  HeaderText1: {fontSize:  hp("2.3%"), fontWeight: 'bold'},
   HeaderTextUnPaid: {
-    fontSize: 18,
+    fontSize: hp("2.2%"),
     fontWeight: 'bold',
     color: Colors.Red,
-    paddingLeft: 15,
+    paddingLeft: hp('2.5%'),
   },
   HeaderTextPaid: {
-    fontSize: 18,
+    fontSize: hp("2.3%"),
     fontWeight: 'bold',
     color: Colors.Green,
-    paddingLeft: 15,
+    paddingLeft: hp('2.5%'),
   },
 
-  innerView: {
-    backgroundColor: '#00008b',
-    height: '13%',
+  header: {
+    backgroundColor: Colors.Dark_blue,
+    height: hp('13%'),
     borderBottomLeftRadius: 22,
     borderBottomRightRadius: 22,
   },
   inneeView1: {
   flexDirection: 'row',
-   marginTop: '15%',
-    marginLeft: '4%'},
+   marginTop: hp('8%'),
+    marginLeft: wp('5%')},
     innerroot:{
       flexDirection:'row'
       ,justifyContent:'space-between'
@@ -66,6 +66,10 @@ export const styles = StyleSheet.create({
     innerView2:{
       flexDirection: 'row',
       justifyContent: 'space-between',
-      padding: 10,
+      padding: hp('1.5%'),
+    },
+    footer:{
+      backgroundColor:Colors.Dark_blue ,
+       height: hp('6%')
     }
 });
